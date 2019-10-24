@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title id="coolTitle">My day</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Tanja's test assignment for WD">
+		<meta name="author" content="Tanja Vinogradova">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/png" href="images/favicon-16x16.png">
+	</head>
+	
+	<body>
+
+			<header id="header">
+				<nav class="right">
+					<ul class="menu">
+						<li><a href="http://photovinogradova.com/resume" target="_blank">About a developer</a></li>
+						<li><a href="#footer">Contacts</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="content">
+					<h1>Your Daily Planner</h1>
+					<p class="bannerp">Try this great tool to check the current date, time and check your to-do tasks for today!</p>
+					<ul class="actions">
+						<li><a href="#three" class="button">Get Started</a></li>
+					</ul>
+				</div>
+			</section>
+
+	
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner flex flex-3">
+					<div class="flex-item box">
+						<div class="image fit">
+							<img src="images/pic02.jpg" alt="calendar"/>
+						</div>
+						<div class="content">
+							<h3>Date checker</h3>
+							<p id="whatDay">What day is it today?</p>
+							<ul class="actions">
+								<li><a class="smallbutton" id="calendar">Show the date</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="flex-item box">
+						<div class="image fit">
+							<img src="images/pic03.jpg" alt="watch"/>
+						</div>
+						<div class="content">
+							<h3>Time checker</h3>
+							<p id="whatTime">What time is it now?</p>
+							<ul class="actions">
+								<li><a class="smallbutton" id="timeNow">Show time</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="flex-item box">
+						<div class="image fit">
+							<img src="images/pic04.jpg" alt="to-do" />
+						</div>
+						<div class="content">
+							<h3>To-Do List</h3>
+							<p id="whatTask">Which tasks should you do today?</p>
+							<ul class="actions">
+								<li><a class="smallbutton" id="ToDo">Show today's tasks</a></li>
+							</ul>
+						</div>
+					</div>
+			</section>
+			<div class="otherTools"><h1>Would you like to try other cool things?</h1></div>
+			<section id="four" class="wrapper">
+				<div class="inner flex flex-3">
+					<div class="flex-item box">
+						<div class="content">
+							<h3>Title Changer</h3>
+							<p>Insert any title you would like to have.</p>
+							<form id="titleInput"><input type="text" autocomplete="off" id="ourField"><ul class="actions">
+								<li><a class="smallbutton" id="newTitle">OK</a></li>
+							</ul></form>
+						</div>
+					</div>
+					<div class="flex-item box">
+						<div class="content">
+							<h3>Background Applier</h3>
+							<p>Choose any color you would like to apply to this page.</p>
+							<select id="colorSelector">
+								<option value="White">White</option>
+								<option value="Aqua">Aqua</option>
+								<option value="Bisque">Sepia</option>
+								<option value="LightGreen">Green</option>
+								<option value="LightSalmon">Salmon</option>
+							  </select>
+						</div>
+					</div>
+					<div class="flex-item box">
+							<div class="content">
+								<h3>Weather in Copenhagen</h3>
+								<p>
+									<!-- Widget From https://weatherwidget.io/  -->
+									<a class="weatherwidget-io" href="https://forecast7.com/en/55d6812d57/copenhagen/" data-label_1="COPENHAGEN" data-label_2="WEATHER" data-font="Monaco" data-mode="Current" data-days="3" data-theme="pure" >COPENHAGEN WEATHER</a>
+									<script>
+									!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+									</script>
+								</p>
+							</div>
+						</div>
+				</div>
+			</section>
+			
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<h2>Get In Touch</h2>
+					<ul class="actions">
+						<li><a href="tel:+4571758814">(45) 71 75 88 14</a></li>
+						<li><a href="mailto:tavinogradova92@gmail.com">tavinogradova92@gmail.com</a></li>
+						<li>Copenhagen, Denmark</li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Tanja Vinogradova
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="assets/javascript/tasks.js"></script>
+        <script type="text/javascript" src="assets/javascript/scripts.js"></script>
+        <script type="text/javascript" src="assets/tasks.json"></script>
+
+	</body>
+</html>
