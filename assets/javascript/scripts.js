@@ -88,10 +88,10 @@ showTaskButton.addEventListener("click", function() {
             text = document.createTextNode(todaysTasks[x].time);
             cell.appendChild(text);
             }
+            document.getElementById("whatTask").firstChild.remove();
             document.getElementById("whatTask").appendChild(table);
         })
     .catch(error   => console.error(error));
-
 });
 
 // Title changer
