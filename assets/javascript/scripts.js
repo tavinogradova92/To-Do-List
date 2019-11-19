@@ -72,7 +72,7 @@ showTaskButton.addEventListener("click", function() {
     let cell = row.insertCell(0);
     cell.innerHTML = `<b>Your tasks on ${weekdays}</b>`;
     
-    fetch('assets/javascript/tasks.json')
+    fetch('https://cors-anywhere.herokuapp.com/git.wd-agency.com/snippets/2/raw')
     .then(response => response.json())
     .then(tasks =>{
          let todaysTasks = tasks.filter(task => task.day === weekdays);
